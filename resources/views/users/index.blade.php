@@ -41,14 +41,14 @@
                                     Delete
                                 </a>
 
-                                <form
-                                	id="delete-form-{{ $user->id }}"
-                                	action="{{ route('users.destroy', ['id' => $user->id]) }}"
-                                	method="POST"
-                                	style="display: none;">
-                                    {{ csrf_field() }}
-                                    {{ method_field('DELETE') }}
-                                </form>
+        <form
+        	id="delete-form-{{ $user->id }}"
+        	action="{{ route('users.destroy', ['id' => $user->id]) }}"
+        	method="POST"
+        	style="display: none;">
+            {{ csrf_field() }}
+            {{ method_field('DELETE') }}
+        </form>
 
 							</div>
 						</td>
